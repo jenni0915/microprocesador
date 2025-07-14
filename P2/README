@@ -1,0 +1,12 @@
+Topics Covered:
+Hardware interrupts and timer usage
+Event-driven programming without polling
+Debouncing physical push buttons
+Analog input/output using ADC and PWM
+
+Key Tasks:
+Replace polling with IRQ-based logic using mbed's low-level timer APIs.
+Implement debouncing techniques via:
+Sampling delay method
+Edge-detection with timing
+LDR-based control of LEDs and display brightness using PWM
