@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: jenni ruan
+universidad politecnica de madrid
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: Jun 5 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.38.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Escritorio\MICRO\P3\S4\E7\MICR.uvprojx
+Project File Date:  06/25/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'mbed_NUCLEO_L432KC'
+compiling to_7seg.cpp...
+compiling hardware.cpp...
+compiling display.cpp...
+compiling range_finder.cpp...
+compiling main.cpp...
+compiling switch.cpp...
+control.cpp(1): warning: In file included from...
+./control.h(1): warning: 'CONTROL_H' is used as a header guard here, followed by #define of a different macro [-Wheader-guard]
+#ifndef CONTROL_H
+        ^~~~~~~~~
+./control.h(2): note: 'CONTGROL_H' is defined here; did you mean 'CONTROL_H'?
+# define CONTGROL_H
+         ^~~~~~~~~~
+         CONTROL_H
+control.cpp(31): error: unknown type name 'TimeOut'; did you mean 'Timeout'?
+  static TimeOut g_to;
+         ^~~~~~~
+         Timeout
+../../../mbed/mbed-os/drivers/include\drivers/Timeout.h(93): note: 'Timeout' declared here
+class Timeout : public TimeoutBase {
+      ^
+1 warning and 1 error generated.
+compiling control.cpp...
+".\~build\mbed_NUCLEO_L432KC.axf" - 1 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.6.1.pack
+                Keil.STM32L4xx_DFP.2.6.1
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Users/jenni/AppData/Local/Arm/Packs/Keil/STM32L4xx_DFP/2.6.1/Drivers/CMSIS/Device/ST/STM32L4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

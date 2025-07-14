@@ -1,0 +1,2 @@
+--cpu Cortex-M0 -g --16 --apcs=interwork --pd "__UVISION_VERSION SETA 538" --pd "STM32F072xB SETA 1"
+-o .\~build\asm.o --depend .\~build\asm.d "asm.s"

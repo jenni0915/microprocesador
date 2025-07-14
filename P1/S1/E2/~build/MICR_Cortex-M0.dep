@@ -1,0 +1,3 @@
+Dependencies for Project 'MICR', Target 'Cortex-M0': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\asm.s)(0x6400F6AF)(--target=arm-arm-none-eabi -mcpu=cortex-m0 -masm=gnu -c-gdwarf-4 -Wa,-defsym,__UVISION_VERSION=538 -Wa,-defsym,STM32F072xB=1-o ./~build/asm.o)

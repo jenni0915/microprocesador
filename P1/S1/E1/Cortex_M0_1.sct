@@ -1,0 +1,17 @@
+; Executable, max 128 KiB loaded at 0x08000000
+EXE 0x08000000 0x00020000  {
+  ; Flash, 128 KiB
+  FLASH 0x08000000 0x00020000  {
+    *.o (.isr_vector, +First)           ; vectors
+    .ANY (+CODE)                        ; all code (.text)
+    .ANY (+RO-DATA)                     ; all read only data (.rodata)
+  }
+  ; RAM, 16 KiB
+  RAM 0x20000000 0x00004000  {
+    .ANY (+RW-DATA)                     ; all read/write data (.data)
+    .ANY (+ZI)                          ; all Zero Initialized data (.bss)
+  }
+  STACK 0x20004000 EMPTY -0x00004000 {  ; stack at top of RAM
+  }  
+}
+
