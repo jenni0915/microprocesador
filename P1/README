@@ -1,0 +1,11 @@
+Topics Covered:
+Basic digital I/O
+Segment display multiplexing
+Analog input with LDR (light-dependent resistor)
+Brightness control using PWM
+
+Key Tasks:
+Mounting and verifying a voltage divider circuit with LDR.
+Visualizing analog levels as percentage brightness on a 7-segment display.
+Managing display updates without using sw_tick_serial library.
+
