@@ -1,0 +1,15 @@
+Topics Covered:
+Finite State Machines (FSM)
+Cooperative FSM for multitasking
+Ultrasonic sensor interfacing (HC-SR04)
+Complex embedded control structure
+
+Key Tasks:
+Measure distance using the HC-SR04 sensor via ECHO/TRIG signals.
+Implement two versions of distance reading logic:
+  Independent event management
+  FSM-based design
+Construct an FSM for:
+  Button debouncing
+  Display multiplexing
+  System-level orchestration
